@@ -7,7 +7,7 @@
   // TODO 5: Initialize CreateJS //
   const
   canvas = document.getElementById('canvas'),
-  stage = new createjs.Stage(canvas);
+  stage = new createjs.Stage();
 
   // TODO 6: Set the framerate of the Ticker
     createjs.Ticker.framerate = 60;
@@ -24,9 +24,22 @@
     bg = new createjs.Shape(),
     circle = new createjs.Shape();
     
-  // CREATE A BACKGROUND //
-  bg.graphics.beginFill('black').drawRect(0, 0, canvas.width, canvas.height);
+    /////////////////////////////////
+
+   // shapeUp = new createjs.Shape();
     
+  // CREATE A BACKGROUND //
+  bg.graphics.beginFill('red').drawRect(0, 0, canvas.width, canvas.height);
+  
+  ///////////////////////////////////////
+  
+  //shapeUp.graphics.beginFill('orange').drawCircle(200, 0, radius);
+  //shapeUp.graphics.beginFill('Blue').drawCircle(100, 0, radius);
+  //shapeUp.graphics.beginFill('red').drawCircle(0, 0, radius);
+
+  //////////////////////////////////////////////////////////
+
+
   // CREATE A CIRCLE //
   circle.graphics.beginFill('green').drawCircle(0, 0, radius);
   circle.graphics.beginFill('yellow').drawCircle(50, 0, radius);
