@@ -21,7 +21,7 @@
          * TODO 8: use your gaming lib to 
          * update the position of the body
          */
-        
+        daBerry.phyz.updatePosition(body);
       });
     }
   };
